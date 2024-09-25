@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  height: 100vh; /* 视口高度，容器占满全屏 */
+}
+
+.image-container {
+  height: calc(100vh - 60px); /* 留出底部按钮的高度 */
+  overflow-y: scroll; /* 启用垂直滚动 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 10px;  /* 固定在底部 */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* 保证按钮在最前面 */
+}

@@ -1,0 +1,107 @@
+.box {
+  height: 1500rpx;
+  background-color: #fff;
+}
+.avatar, .role, .name {
+  position: relative;
+  top: -100rpx; /* 向上移动20rpx，可以根据需要调整 */
+}
+.block1 {
+  display: flex;
+  justify-content: space-between; /* 水平空间均匀分布 */
+  align-items: center; /* 垂直居中对齐 */
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  height: 450rpx;
+  background-color: #f3514f;
+}
+
+.block2 {
+
+  position: absolute; /* 设为绝对定位 */
+
+  top: 250rpx; /* 调整顶部位置，部分叠加在block1上 */
+
+  left: 0;
+
+  width: 96%;
+
+  height: 1250rpx;
+
+  background-color: #fff;
+
+  z-index: 10; /* 确保叠加在block1之上 */
+
+  /* 水平居中 */
+
+  left: 0;
+
+  right: 0;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+.block3 {
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff5a79; /* 顶部粉红色背景 */
+  padding: 10rpx;
+  color: #fff;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info.left {
+  flex-direction: row;
+}
+.user-detail-left{
+  display: flex;
+  flex-direction: column; /* 垂直排列头像和名字 */
+  align-items: center; /* 水平居中对齐 */
+}
+
+.user-info.right {
+  flex-direction: row-reverse;
+}
+.user-detail-right {
+  display: flex;
+  flex-direction: column; /* 垂直排列头像和名字 */
+  align-items: center; /* 水平居中对齐 */
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.role {
+  background-color: #fff;
+  color: #ff5a79;
+  border-radius: 20rpx;
+  padding: 0 10rpx;
+  margin: 0 10rpx;
+}
+
+.name {
+  color: #fff;
+  margin-top: 10rpx; /* 添加与头像之间的间距 */
+}
+
+.center-content {
+  color: #fff;
+  position: relative;
+  top: -150rpx; /* 向上移动20rpx，可以根据需要调整 */
+}

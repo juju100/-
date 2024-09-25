@@ -1,0 +1,14 @@
+<view class="container1">
+  <view class="inner_part">
+    <view class="content">{{progressText}}</view>
+  </view>
+</view>
+
+<view class="grid-container">
+  <block wx:for="{{modules}}" wx:key="index">
+    <view class="grid-item" bindtap="handleClick" data-index="{{index}}">
+      <image src="{{item.img || '/assest/images/lock.jpeg'}}" class="module-image" />
+      <view class="module-text">{{item.text}}</view>
+    </view>
+  </block>
+</view>

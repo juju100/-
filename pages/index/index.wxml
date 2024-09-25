@@ -1,0 +1,59 @@
+<view class="box">
+  <view class="block1">
+    <view class="user-info left">
+      <view class="user-detail-left">
+        <image class="avatar" src="/assest/avater/ave2.jpg"></image>
+        <text class="name">三生有幸</text>
+      </view>
+      <text class="role">顾客</text>
+    </view>
+
+    <view class="center-content">家有爱厨</view>
+
+    <view class="user-info right">
+      <view class="user-detail-right">
+        <image class="avatar" src="/assest/avater/ave1.jpg"></image>
+        <text class="name">岁月茶香</text>
+      </view>
+      <view>
+        <text class="role">老板</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="block2">
+    <!-- 默认菜品 -->
+    <view class="fixed-button">
+      <button bindtap="chooseImage">添加图片</button>
+    </view>
+    
+    <!-- 图片列表，scroll-view实现滚动 -->
+    <scroll-view scroll-y="true" class="image-container">
+      <block wx:for="{{images}}" wx:key="index">
+        <view wx:if="{{images[index * 2]}}">
+          <view class="image-row">
+            <!-- 左侧图片卡片 -->
+            <view class="image-card" bindtap="handleImageClick" data-index="{{index * 2}}" data-src="{{images[index * 2].src}}">
+              <image src="{{images[index * 2].src}}" mode="aspectFill" class="image"></image>
+              <view class="card-info">
+                <text class="image-title">名字：{{images[index * 2].title}}</text>
+                <text class="image-description">简介：{{images[index * 2].description}}</text>
+              </view>
+            </view>
+            <!-- 右侧图片卡片，如果有 -->
+            <view wx:if="{{images[index * 2 + 1]}}" class="image-card" bindtap="handleImageClick" data-index="{{index * 2 + 1}}" data-src="{{images[index * 2 + 1].src}}">
+              <image src="{{images[index * 2 + 1].src}}" mode="aspectFill" class="image"></image>
+              <view class="card-info">
+                <text class="image-title">名字：{{images[index * 2 + 1].title}}</text>
+                <text class="image-description">简介：{{images[index * 2 + 1].description}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view class="block3"></view>
+
+</view>

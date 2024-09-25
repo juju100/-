@@ -1,0 +1,65 @@
+/* 个人信息头部样式 */
+.profile-header {
+  background-color: #ff6f6f;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 18px;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.right-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon-star, .icon-sign {
+  background-color: #fff;
+  color: #ff6f6f;
+  padding: 5px 10px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* 菜单样式 */
+.menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-text {
+  flex-grow: 1;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.menu-arrow {
+  color: #ccc;
+  font-size: 18px;
+}

@@ -1,0 +1,42 @@
+<view class="profile">
+  <view class="profile-header">
+    <image class="avatar" src="{{avatarUrl}}" bindtap="changeAvatar"></image>
+    <text class="username" bindtap="changeUsername">{{username}}</text>
+    <view class="right-icons">
+      <view class="icon-star">⭐3.8</view>
+      <view class="icon-sign">签到</view>
+    </view>
+  </view>
+
+  <view class="menu">
+    <navigator url="/pages/banance/banance" class="menu-item">
+      <image src="/images/balance.png" class="menu-icon"></image>
+      <text class="menu-text">爱心余额</text>
+      <text class="menu-arrow">></text>
+    </navigator>
+
+    <navigator url="/pages/orders/orders" class="menu-item">
+      <image src="/images/orders.png" class="menu-icon"></image>
+      <text class="menu-text">我的订单</text>
+      <text class="menu-arrow">></text>
+    </navigator>
+
+    <navigator url="/pages/feedback/feedback" class="menu-item">
+      <image src="/images/feedback.png" class="menu-icon"></image>
+      <text class="menu-text">问题反馈</text>
+      <text class="menu-arrow">></text>
+    </navigator>
+
+    <navigator url="/pages/faq/faq" class="menu-item">
+      <image src="/images/faq.png" class="menu-icon"></image>
+      <text class="menu-text">常见问题</text>
+      <text class="menu-arrow">></text>
+    </navigator>
+
+    <navigator url="/pages/setting/setting" class="menu-item">
+      <image src="/images/settings.png" class="menu-icon"></image>
+      <text class="menu-text">餐厅设置</text>
+      <text class="menu-arrow">></text>
+    </navigator>
+  </view>
+</view>

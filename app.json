@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/restaurant/restaurant",
+    "pages/square/square",
+    "pages/check/check",
+    "pages/peofile/profile",
+    "pages/index-cooker/index-cooker",
+    "pages/banance/banance",
+    "pages/orders/orders",
+    "pages/feedback/feedback",
+    "pages/faq/faq",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "navigationBarTitleText": "家有爱厨",
+    "navigationBarBackgroundColor": "#f3514f",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "selectedColor": "#f3514f",
+    "color": "#666",
+    "backgroundColor": "#efefef",
+    "list": [
+      {
+        "text": "恋爱餐厅",
+        "pagePath": "pages/index/index",
+        "iconPath": "/assest/index-icons/xin-qinglv-copy.png",
+        "selectedIconPath": "/assest/index-icons/xin-qinglv-copy.png"
+      },
+      {
+        "text": "恩爱广场",
+        "pagePath": "pages/square/square",
+        "iconPath": "/assest/index-icons/guangchang-copy-copy.png",
+        "selectedIconPath": "/assest/index-icons/guangchang-copy-copy.png"
+      },
+      {
+        "text": "约会打卡",
+        "pagePath": "pages/check/check",
+        "iconPath": "/assest/index-icons/daka.png",
+        "selectedIconPath": "/assest/index-icons/daka.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/peofile/profile",
+        "iconPath": "/assest/index-icons/gerenxinxi.png",
+        "selectedIconPath": "/assest/index-icons/gerenxinxi.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
